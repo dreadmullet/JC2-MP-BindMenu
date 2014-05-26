@@ -70,6 +70,15 @@ end)
 
 **Be careful when using mouse movement's state.** If you have a boost button that multiplies the boost by *control.state*, be sure to clamp it between 0 and 1. Otherwise, if someone binds a mouse direction to it, they can easily boost 20 times as much as they should, because *control.state* is the number of pixels moved per frame.
 
+#### Other functions
+
+* Controls.Add(name, default)
+* Controls.Remove(controlName)
+* Controls.GetInputNameByControl(controlName)
+	* Example: *Controls.GetInputNameByControl("Cross eyes")* will return "Mouse3"
+* Controls.Get(controlName)
+* Controls.GetIsHeld(controlName)
+
 ### Examples
 
 See https://github.com/dreadmullet/JC2-MP-Noclip for a full demonstration of how to use controls and set up the bind menu.
