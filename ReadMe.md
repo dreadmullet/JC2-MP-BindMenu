@@ -34,6 +34,8 @@ bindMenu:AddControl("Move right eyebrow down" , "Mouse wheel down") -- Mouse whe
 bindMenu:RequestSettings()
 ```
 
+**Note:** due to a scripting limitation, make sure you call *bindMenu:Remove()* instead of just removing the bind menu's parent.
+
 #### Using controls (client)
 
 You can use the following events:
